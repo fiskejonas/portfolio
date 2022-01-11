@@ -1,0 +1,186 @@
+body {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 81%,
+    rgba(157, 255, 157, 1) 100%
+  );
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-family: "Sumana", serif;
+}
+h1 {
+  font-size: clamp(2rem, 12.8vw + 0rem, 2rem);
+}
+#first h1 {
+  font-size: clamp(3rem, 12.8vw + 0rem, 8rem);
+}
+p {
+  max-width: 60ch;
+  font-size: clamp(1.2rem, 0.5vw + 1.4rem, 2rem);
+  font-family: "Roboto", sans-serif;
+}
+
+.tekst {
+  margin-left: 50px;
+  font-size: 3rem;
+}
+.tekst_container {
+  display: flex;
+  padding-top: 30px;
+  align-items: center;
+}
+#first {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin-top: 100px;
+}
+.overskrift {
+  font-size: clamp(3rem, 12.8vw + 0rem, 8rem);
+  line-height: 200px;
+}
+
+.intro_billede {
+  width: 100%;
+  height: auto;
+  max-width: 280px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+  #first {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #first h1 {
+    text-align: center;
+    font-size: clamp(8rem, 12.8vw + 0rem, 20rem);
+  }
+  .overskrift {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .intro_billede {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .tekst_container {
+    grid-column: 1 / 3;
+  }
+  .tekst {
+    margin-left: 0px;
+  }
+}
+
+#tekst2 {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+@media only screen and (max-width: 700px) {
+  #first {
+    display: flex;
+    flex-direction: column;
+  }
+  #first h1 {
+    text-align: center;
+    font-size: clamp(3rem, 12.8vw + 0rem, 20rem);
+  }
+  .intro_billede {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.banner_container {
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.t-shirtss {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: clamp(2rem, 12.8vw + 0rem, 2rem);
+  color: black;
+  font-family: "Sumana", serif;
+}
+
+#billeder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+#billeder img {
+  outline: 2px solid white;
+}
+#logoer123 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+#proto_container img {
+  outline: 2px solid black;
+}
+
+#fourth {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.knap {
+  font-family: "Press Start 2P", cursive;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.knap:hover {
+  transform: translate(-5px, -5px);
+  transition: transform 0.3s ease;
+}
+
+#logoer123 {
+  outline: 2px solid black;
+}
+
+#figur {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 7vw;
+}
+
+#figur img {
+  outline: 2px solid black;
+}

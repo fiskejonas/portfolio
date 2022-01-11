@@ -1,0 +1,71 @@
+header {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: clamp(2rem, 1vw + 1.8rem, 3rem);
+}
+
+p {
+  max-width: 60ch;
+  font-size: clamp(1rem, 1vw + 0.8rem, 2rem);
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  margin-left: 5vw;
+  outline: 2px solid black;
+}
+
+#first_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: "Roboto", sans-serif;
+  margin-top: 7vw;
+  align-items: center;
+}
+
+#first {
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 750px) {
+  #first_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  img {
+    margin: 10px;
+  }
+
+  #links {
+    justify-content: center;
+  }
+}
+
+#links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.link {
+  padding: 10px 40px;
+  border: 2px solid black;
+  border-radius: 25px;
+  margin-top: 3vw;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: black;
+}
+
+.link:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
