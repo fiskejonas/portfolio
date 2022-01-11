@@ -11,25 +11,23 @@ header {
   font-family: "Roboto", sans-serif;
 }
 h1,
-h2,
 h3 {
   font-family: "Sumana", serif;
 }
 h1 {
-  font-size: clamp(2rem, 12.8vw + 0rem, 2rem);
+  font-size: clamp(4rem, 3.4444rem + 2.963vw, 7rem);
+  line-height: 2;
 }
-#first h1 {
-  font-size: clamp(3rem, 12.8vw + 0rem, 8rem);
-}
+
 p {
   max-width: 60ch;
-  font-size: clamp(1.2rem, 0.5vw + 1.4rem, 2rem);
+  font-size: clamp(1rem, 0.8503rem + 0.9581vw, 2rem);
   font-family: "Roboto", sans-serif;
 }
 
 .tekst {
   margin-left: 50px;
-  font-size: 3rem;
+  font-size: clamp(2rem, 1.6296rem + 1.9753vw, 4rem);
 }
 .tekst_container {
   display: flex;
@@ -43,8 +41,9 @@ p {
   margin-top: 100px;
 }
 .overskrift {
-  font-size: clamp(3rem, 12.8vw + 0rem, 8rem);
-  line-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .intro_billede {
@@ -59,10 +58,6 @@ p {
   #first {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
-  #first h1 {
-    text-align: center;
-    font-size: clamp(8rem, 12.8vw + 0rem, 20rem);
   }
   .overskrift {
     grid-column: 1 / 2;
@@ -101,7 +96,6 @@ video {
   }
   #first h1 {
     text-align: center;
-    font-size: clamp(3rem, 12.8vw + 0rem, 20rem);
   }
   .intro_billede {
     width: 100%;
@@ -114,19 +108,19 @@ video {
     flex-direction: column;
   }
 }
-.banner_container {
+/* .banner_container {
   position: relative;
   margin-top: 100px;
   text-align: center;
   color: white;
-}
+} */
 
 /* Bottom left text */
 .t-shirtss {
   position: absolute;
   bottom: 8px;
   left: 16px;
-  font-size: clamp(2rem, 12.8vw + 0rem, 2rem);
+  font-size: clamp(1rem, -0.0479rem + 6.7066vw, 8rem);
   color: black;
   font-family: "Sumana", serif;
 }
@@ -161,7 +155,7 @@ video {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -183,4 +177,17 @@ video {
 
 #figur img {
   outline: 2px solid black;
+}
+
+@media only screen and (max-width: 350px) {
+  section img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+  }
 }

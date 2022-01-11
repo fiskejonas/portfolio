@@ -76,6 +76,7 @@ footer {
 }
 #footer_wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 5vw;
   padding-right: 5vw;
