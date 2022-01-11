@@ -32,6 +32,10 @@ p {
   font-size: clamp(1rem, 0.8503rem + 0.9581vw, 2rem);
   font-family: "Roboto", sans-serif;
 }
+.tekst {
+  display: flex;
+  align-items: center;
+}
 
 .tekst h2 {
   font-family: "Dosis", sans-serif;
@@ -45,9 +49,9 @@ p {
 #first_wrapper {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: 3fr 1fr;
-  align-items: flex-end;
-  margin-top: 7vw;
+  grid-template-rows: auto auto;
+  line-height: 1;
+  margin-top: 5vw;
 }
 .indhold {
   grid-column: 2 / 3;
@@ -187,6 +191,9 @@ p {
     width: 100%;
     height: auto;
     max-width: 200px;
+  }
+  #first_wrapper {
+    margin-top: 2vw;
   }
 }
 

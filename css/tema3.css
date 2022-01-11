@@ -38,7 +38,6 @@ p {
   display: grid;
   grid-template-columns: 0.5fr 1fr 1fr;
   grid-template-rows: auto auto;
-  margin-top: 100px;
 }
 .overskrift {
   display: flex;
@@ -108,6 +107,10 @@ video {
     flex-direction: column;
   }
 }
+
+#t-shirts {
+  margin-top: 5vw;
+}
 /* .banner_container {
   position: relative;
   margin-top: 100px;
@@ -116,14 +119,14 @@ video {
 } */
 
 /* Bottom left text */
-.t-shirtss {
+/* .t-shirtss {
   position: absolute;
   bottom: 8px;
   left: 16px;
   font-size: clamp(1rem, -0.0479rem + 6.7066vw, 8rem);
   color: black;
   font-family: "Sumana", serif;
-}
+} */
 
 #billeder {
   display: grid;

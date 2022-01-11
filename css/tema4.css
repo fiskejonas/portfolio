@@ -45,10 +45,9 @@ p {
 
 /*section 1*/
 #first_wrapper {
-  margin-top: 7vw;
+  margin-top: 3vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
 }
 .billede1 img {
   outline: 5px solid orange;

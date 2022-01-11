@@ -21,7 +21,6 @@ img {
   max-width: 100%;
 }
 #first_section {
-  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
